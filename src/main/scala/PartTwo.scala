@@ -1,5 +1,5 @@
 
-object Day21 {
+object Day21 extends App {
 
   // Hit Points: 103
   // Damage: 9
@@ -9,17 +9,12 @@ object Day21 {
 
   case class Fighter(name: String, hp: Int, dmg: Int, armor: Int)
   val boss = Fighter("boss", 103, 9, 2)
-  // val player = Fighter("player", 100, 9, 1)
-
-  // 9,3 o 8,4
 
   def fight(player: Fighter) = {
 
     def nextRound(first: Fighter, second: Fighter): Fighter = {
       val next1 = Fighter(first.name, first.hp - trunc(second.dmg - first.armor), first.dmg, first.armor)
       val next2 = Fighter(second.name, second.hp - trunc(first.dmg - second.armor), second.dmg, second.armor)
-
-      // println (next1, next2)
 
       if (next2.hp < 1) return first
       if (next1.hp < 1) return second
@@ -36,12 +31,6 @@ object Day21 {
     val winner = fight(player)
     if ("boss" == winner.name) println (player)
   }
-
-  // val winner = fight(player)
-
-  // println (   s"The winner is: $winner"   )
-
-
 
 }
 

@@ -18,3 +18,5 @@ libraryDependencies  ++= Seq(
 libraryDependencies += "com.typesafe.play" %% "play-json" % "2.4.3"
 
 libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.4"
+
+libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.0"
