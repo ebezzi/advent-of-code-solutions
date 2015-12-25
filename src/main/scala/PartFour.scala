@@ -1,9 +1,4 @@
 
-object Day22Take2 extends App {
-
-}
-
-
 
 object Day22 extends App {
 
@@ -65,7 +60,6 @@ object Day22 extends App {
     val winner = fight(player)
     if ("boss" == winner.name) println (player)
   }
-
 
 
 
