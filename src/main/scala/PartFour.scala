@@ -1,6 +1,6 @@
 
 
-object Day22 extends App {
+object Day22 {
 
   def normalize(x: Int) = if (x>1) x else 1
 

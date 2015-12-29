@@ -1,5 +1,5 @@
 
-object Day21 extends App {
+object Day21 {
 
   // Hit Points: 103
   // Damage: 9
