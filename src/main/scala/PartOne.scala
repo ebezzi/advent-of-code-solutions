@@ -343,7 +343,7 @@ object Day6Part2  {
 }
 
 
-object Day5  {
+object Day5 extends App {
 
   // It contains at least three vowels (aeiou only), like aei, xazegov, or aeiouaeiouaeiou.
   // It contains at least one letter that appears twice in a row, like xx, abcdde (dd), or aabbccdd (aa, bb, cc, or dd).
@@ -389,7 +389,7 @@ object Day5  {
 
 }
 
-object Day4  {
+object Day4 extends App {
 
   import java.nio.ByteBuffer
   import java.security.MessageDigest
@@ -400,7 +400,7 @@ object Day4  {
   def toHex(bytes: Array[Byte]) = bytes.map("%02X".format(_)).mkString
 
   (1 to 10000000) foreach { i => 
-    if (toHex(MD5(s"$key$i")).startsWith("000000"))
+    if (toHex(MD5(s"$key$i")).startsWith("00000"))
       println (i)
   }
 
